@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="m-0 p-0" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              raj: ["Rajdhani", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Veetrix</title>
+  </head>
+
+  <body
+    class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-raj"
+  >
+    <header class="bg-white shadow dark:bg-gray-800 dark:text-white">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <img src="./assets/logo.png" alt="logo" class="h-10" />
+        <div class="flex items-center gap-4">
+          <button
+            onclick="document.documentElement.classList.toggle('dark')"
+            class="h-8 w-8 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          >
+            <svg
+              class="fill-violet-700 block dark:hidden"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              ></path>
+            </svg>
+            <svg
+              class="fill-yellow-400 hidden dark:block"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <a
+            href="#"
+            class="text-pink-600 hover:text-pink-800 font-medium dark:text-pink-400 dark:hover:text-pink-300"
+            >Login</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white p-10 text-center flex flex-col items-center justify-center gap-2 jumbotrom dark:bg-gradient-to-r dark:from-blue-700 dark:via-purple-700 dark:to-pink-700"
+    >
+      <div class="scale-up-center-normal flex flex-col gap-4 items-center">
+        <h2
+          class="text-5xl font-extrabold tracking-tight leading-tight mb-2 drop-shadow-lg font-raj"
+        >
+          Construa. Conecte. Colabore com o
+          <span class="text-pink-300 font-raj">Veetrix</span>
+        </h2>
+        <p class="text-xl text-white/90 max-w-2xl mx-auto font-raj">
+          Uma plataforma feita para transformar ideias em soluções reais por
+          meio da colaboração entre desenvolvedores.
+        </p>
+
+        <button
+          class="bg-white hover:bg-gray-100 dark:bg-gray-800 hover:dark:bg-gray-700 text-purple-500 font-bold py-2 px-4 rounded-lg dark:bg-gray-200 dark:hover:bg-white dark:text-purple-700"
+        >
+          Cadastrar
+        </button>
+      </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-12 space-y-12 font-raj">
+      <section
+        class="relative bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-lg shadow-lg overflow-hidden p-8"
+      >
+        <div
+          class="absolute inset-0 opacity-20 bg-[url('https://freedesignfile.com/upload/2017/10/Blue-abstract-technology-background-with-circle-and-geometric-concept-vector-design.jpg')] bg-cover bg-center"
+        ></div>
+        <div class="relative z-10 space-y-4 text-center md:text-left">
+          <h2
+            class="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg"
+          >
+            Conecte talentos. Transforme ideias.
+          </h2>
+          <p class="text-lg md:text-xl text-white/90 max-w-4xl mx-auto md:mx-0">
+            Nossa plataforma foi criada para reunir desenvolvedores de
+            diferentes áreas e especialidades, permitindo a formação de
+            <strong>equipes colaborativas autônomas</strong>. Aqui, qualquer
+            pessoa pode compartilhar um projeto ou ideia, descrever as
+            tecnologias envolvidas e buscar profissionais com o perfil ideal.
+            Juntos, vocês podem transformar conceitos em
+            <strong>soluções reais e impactantes</strong>, criando um verdadeiro
+            ecossistema de inovação.
+          </p>
+          <p class="text-base text-white/80 max-w-3xl mx-auto md:mx-0">
+            A seleção de talentos acontece de forma natural, transparente e
+            descentralizada — com cada desenvolvedor escolhendo onde e como
+            deseja contribuir.
+          </p>
+          <div class="flex justify-center md:justify-start gap-4 mt-6">
+            <a
+              href="#"
+              class="bg-white text-purple-700 font-semibold py-2 px-6 rounded-lg shadow hover:bg-gray-100 hover:text-purple-900 transition-colors"
+            >
+              Comece seu projeto
+            </a>
+            <a
+              href="#"
+              class="bg-white/20 border border-white text-white font-semibold py-2 px-6 rounded-lg hover:bg-white/30 transition-colors"
+            >
+              Saiba mais
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="space-y-8 text-center py-12">
+        <h3 class="text-3xl font-extrabold text-primary mb-6">Como funciona</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg space-y-4"
+          >
+            <h4 class="text-xl font-bold text-secondary">
+              1. Publique seu projeto
+            </h4>
+            <p>
+              Compartilhe sua ideia e detalhe as tecnologias e perfis que
+              procura.
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg space-y-4"
+          >
+            <h4 class="text-xl font-bold text-secondary">
+              2. Conecte com talentos
+            </h4>
+            <p>
+              Desenvolvedores interessados entrarão em contato para colaborar.
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg space-y-4"
+          >
+            <h4 class="text-xl font-bold text-secondary">
+              3. Construa em equipe
+            </h4>
+            <p>Forme um time e transforme ideias em produtos reais!</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3 class="text-2xl font-semibold mb-6">Projetos em andamento</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 dark:bg-gray-800"
+          >
+            <img
+              src="https://freedesignfile.com/upload/2017/10/Blue-abstract-technology-background-with-circle-and-geometric-concept-vector-design.jpg"
+              alt="Foto genérica do projeto"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="font-bold text-lg mb-2">Projeto Alpha</h4>
+              <p><strong>Stack:</strong> React, Node.js, PostgreSQL</p>
+              <p>
+                <strong>Responsáveis:</strong> Ana Silva (Frontend), Bruno Costa
+                (Backend), Carla Mendes (DBA)
+              </p>
+              <p><strong>Cliente:</strong> TechCorp</p>
+              <p>Implementação do novo sistema de login.</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 dark:bg-gray-800"
+          >
+            <img
+              src="https://freedesignfile.com/upload/2017/10/Blue-abstract-technology-background-with-circle-and-geometric-concept-vector-design.jpg"
+              alt="Foto genérica do projeto"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="font-bold text-lg mb-2">Projeto Beta</h4>
+              <p><strong>Stack:</strong> Vue.js, Laravel, MySQL</p>
+              <p>
+                <strong>Responsáveis:</strong> Diego Ramos, Elisa Ferreira,
+                Fabio Lucas
+              </p>
+              <p><strong>Cliente:</strong> InovaSoft</p>
+              <p>Atualização da interface de usuário.</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 dark:bg-gray-800"
+          >
+            <img
+              src="https://freedesignfile.com/upload/2017/10/Blue-abstract-technology-background-with-circle-and-geometric-concept-vector-design.jpg"
+              alt="Foto genérica do projeto"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="font-bold text-lg mb-2">Projeto Delta</h4>
+              <p><strong>Stack:</strong> Angular, .NET Core, SQL Server</p>
+              <p>
+                <strong>Responsáveis:</strong> Gabriela Porto, Hugo Almeida,
+                Igor Santos
+              </p>
+              <p><strong>Cliente:</strong> FinanTech</p>
+              <p>Design do dashboard principal.</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 dark:bg-gray-800"
+          >
+            <img
+              src="https://freedesignfile.com/upload/2017/10/Blue-abstract-technology-background-with-circle-and-geometric-concept-vector-design.jpg"
+              alt="Foto genérica do projeto"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="font-bold text-lg mb-2">Projeto Gama</h4>
+              <p><strong>Stack:</strong> React Native, Firebase</p>
+              <p><strong>Responsáveis:</strong> Juliana Rocha, Lucas Pereira</p>
+              <p><strong>Cliente:</strong> AppSolutions</p>
+              <p>Integração com serviços externos.</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 dark:bg-gray-800"
+          >
+            <img
+              src="https://freedesignfile.com/upload/2017/10/Blue-abstract-technology-background-with-circle-and-geometric-concept-vector-design.jpg"
+              alt="Foto genérica do projeto"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="font-bold text-lg mb-2">Projeto Sigma</h4>
+              <p><strong>Stack:</strong> Svelte, Go, MongoDB</p>
+              <p>
+                <strong>Responsáveis:</strong> Marina Teixeira, Natan Silva,
+                Olivia Costa
+              </p>
+              <p><strong>Cliente:</strong> DataStream</p>
+              <p>Painel analítico em tempo real.</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 dark:bg-gray-800"
+          >
+            <img
+              src="https://freedesignfile.com/upload/2017/10/Blue-abstract-technology-background-with-circle-and-geometric-concept-vector-design.jpg"
+              alt="Foto genérica do projeto"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h4 class="font-bold text-lg mb-2">Projeto Theta</h4>
+              <p><strong>Stack:</strong> React, Django, Redis</p>
+              <p>
+                <strong>Responsáveis:</strong> Pedro Nunes, Rafael Gomes, Sofia
+                Lima
+              </p>
+              <p><strong>Cliente:</strong> SecureWeb</p>
+              <p>Sistema de notificações em tempo real.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-12 bg-gray-50 dark:bg-gray-900 text-center max-w-5xl mx-auto px-4 rounded-lg shadow-lg"
+      >
+        <h3 class="text-3xl font-extrabold text-primary mb-8">
+          O que dizem nossos usuários
+        </h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <blockquote
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow space-y-4 flex flex-col justify-between min-h-[220px]"
+          >
+            <p class="italic">
+              "Graças à plataforma, encontrei uma equipe incrível para
+              desenvolver meu app em tempo recorde!"
+            </p>
+            <footer class="font-semibold mt-4">
+              – Carlos Eduardo, Empreendedor
+            </footer>
+          </blockquote>
+          <blockquote
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow space-y-4 flex flex-col justify-between min-h-[220px]"
+          >
+            <p class="italic">
+              "Colaborar com profissionais qualificados fez toda a diferença
+              para meu crescimento como desenvolvedor."
+            </p>
+            <footer class="font-semibold mt-4">
+              – Ana Silva, Frontend Dev
+            </footer>
+          </blockquote>
+          <blockquote
+            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow space-y-4 flex flex-col justify-between min-h-[220px]"
+          >
+            <p class="italic">
+              "A interface é simples e prática, facilitando a publicação e busca
+              por projetos relevantes."
+            </p>
+            <footer class="font-semibold mt-4">
+              – Bruno Costa, Backend Dev
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-12">
+      <div
+        class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+      >
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-blue-400">Facebook</a>
+          <a href="#" class="hover:text-blue-400">Twitter</a>
+          <a href="#" class="hover:text-blue-400">Instagram</a>
+        </div>
+        <p class="text-sm">
+          &copy; 2025 Veetrix. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
